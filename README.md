@@ -24,11 +24,11 @@ fcryptor is a command-line utility for encrypting and decrypting files and direc
 Encrypt a file or directory into a secure `.fc` database:
 
 ```bash
-python fcryptor.py --encrypt --file <file_path> --key <encryption_key>
+fcryptor --encrypt --file <file_path> --key <encryption_key>
 ```
 
 ```bash
-python fcryptor.py --encrypt --directory <directory_path> --key <encryption_key>
+fcryptor --encrypt --directory <directory_path> --key <encryption_key>
 ```
 
 If the `--key` option is not provided, the utility will prompt you to enter the encryption key interactively.
@@ -38,7 +38,7 @@ If the `--key` option is not provided, the utility will prompt you to enter the 
 Decrypt an `.fc` database to restore the original files or directories:
 
 ```bash
-python fcryptor.py --decrypt --file <encrypted_database_path> --key <decryption_key>
+fcryptor --decrypt --file <encrypted_database_path> --key <decryption_key>
 ```
 
 The decrypted files will be restored to the current working directory.
@@ -54,7 +54,7 @@ The decrypted files will be restored to the current working directory.
 ### Encrypt a File
 
 ```bash
-python fcryptor.py --encrypt --file my_document.txt --key MySecureKey
+fcryptor --encrypt --file my_document.txt --key MySecureKey
 ```
 
 This command will create an encrypted `.fc` file containing the encrypted contents of `my_document.txt`.
@@ -62,7 +62,7 @@ This command will create an encrypted `.fc` file containing the encrypted conten
 ### Encrypt a Directory
 
 ```bash
-python fcryptor.py --encrypt --directory my_folder --key MySecureKey
+fcryptor --encrypt --directory my_folder --key MySecureKey
 ```
 
 This command will create an encrypted `.fc` file containing the encrypted contents of all files within `my_folder`.
@@ -70,7 +70,7 @@ This command will create an encrypted `.fc` file containing the encrypted conten
 ### Decrypt a File
 
 ```bash
-python fcryptor.py --decrypt --file my_folder.fc --key MySecureKey
+fcryptor --decrypt --file my_folder.fc --key MySecureKey
 ```
 
 This command will restore the original files from the `my_folder.fc` database.
