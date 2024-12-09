@@ -5,7 +5,9 @@ fcryptor is a command-line utility for encrypting and decrypting files and direc
 
 ## Installation
 
-[Installation instructions will be added here.]
+```bash
+curl -sSL https://raw.githubusercontent.com/BytesVault/fcryptor/refs/heads/master/fcryptor-install.sh | sh -
+```
 
 
 ## Features
